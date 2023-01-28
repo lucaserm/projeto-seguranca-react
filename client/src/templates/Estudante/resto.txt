@@ -1,0 +1,35 @@
+{/* <% if(repetir.length > 1){%>
+          <div className="responsive-table">
+            <table className="table my-3" color>
+              <tr align="center">
+                <td>Id</td><td>Nome</td><td>CPF</td><td>RA</td><td>Foto</td>
+              </tr>
+              <% repetir.forEach(estudante => { %>
+              <tr className="vertical-align-center" align="center">
+                <td><%= estudante.id%></td>
+                <td><%= estudante.nome_estudante%></td>
+                <td><%= estudante.cpf%></td>
+                <td><%= estudante.ra%></td>
+                <td><img src="<%= estudante.foto%>" height="60"></td>
+              </tr>
+              <tr>
+                <td colspan="5">
+                  <form action="/administracao/horarios" method="post">
+                    <input type="text" name="ra" value="<%= estudante.ra%>" hidden>
+                    <input type="text" name="cpf" value="<%= estudante.cpf%>" hidden>
+                    <input type="text" name="nome" value="<%= estudante.nome_estudante%>" hidden>
+                    <input type="text" name="codigo_servidor" value="<%= codigo_servidor%>" hidden>
+                    <input type="text" name="senha" value="<%= senha%>" hidden>
+                    <button className="btn button btn-info">Selecionar</button>
+                  </form>
+                </td>
+              </tr>
+              <% }); %>
+            </table>
+          </div>
+          <form action="/administracao/paginainicial" method="post">
+            <input type="text" name="codigo_servidor" value="<%= codigo_servidor%>" hidden>
+            <input type="text" name="senha" value="<%= senha%>" hidden>
+            <button className="btn button btn-dark">Voltar</button>
+          </form>
+        <% }else if (horarios.length > 0){ %> */}
